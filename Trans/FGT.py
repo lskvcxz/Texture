@@ -4,7 +4,8 @@ import sys
 sys.path.append('..')
 from Tools import tools
 
-def fgt(O_path, W_path, lines, PHI1 = [], ODF = []):
+def fgt(O_path, W_path, lines):
+    PHI1, ODF = [], []
     a = tools.tool()
     a.Read_file (1, 6859, lines, PHI1, 0)
     a.Read_file (1, 6859, lines, ODF, 3)

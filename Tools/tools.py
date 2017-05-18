@@ -10,7 +10,8 @@ class tool:
             Variable.append (float(lines[x].split()[split]))
 
     @staticmethod
-    def Create_array (Eular_angle, ODF, Z = []):
+    def Create_array (Eular_angle, ODF):
+        Z = []
         for y in range (19):
             for x in range (6859):
                 if Eular_angle[x] == 5*y:
@@ -29,7 +30,8 @@ class tool:
             file.write ('\n')
 
     @staticmethod
-    def Create_Z (Eular_angle, ODF, U = []):
+    def Create_Z (Eular_angle, ODF):
+        U = []
         for y in range (19):
             Z = []
             for x in range (6859):

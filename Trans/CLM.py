@@ -4,7 +4,8 @@ import sys
 sys.path.append('..')
 from Tools import tools
 
-def clm(O_path, W_path, lines, L = [], Mu = [], Nu = [], Re = []):
+def clm(O_path, W_path, lines):
+    L, Mu, Nu, Re = [], [], [], []
     a = tools.tool()
     a.Read_file (1, 179, lines, L,  1)
     a.Read_file (1, 179, lines, Mu, 2)

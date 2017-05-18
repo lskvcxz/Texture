@@ -6,7 +6,8 @@ from Tools import tools
 import numpy as np
 import matplotlib.pyplot as plt
 
-def odf(lines, PHI2 = [], ODF = []):
+def odf(lines):
+    PHI2, ODF = [], []
     a = tools.tool()
     a.Read_file (1, 6859, lines, PHI2, 1)
     a.Read_file (1, 6859, lines, ODF,  3)
